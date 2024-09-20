@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    /* background-color: rgb(44, 207, 212); */
+    background-color: black;
+    padding: 20px 100px;
+
+}
+
+.logo1 h1{
+    color: white;
+    font-size: 30px;
+}
+
+span{
+    color: red;
+    /* background-color: aqua; */
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: cursive;
+}
+.navlinks ul li{
+    display: inline-block;
+    margin: 0 20px;
+    font-family: "Poppins", sans-serif;
+   
+}
+.navlinks ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.navlinks input{
+    width: 400px;
+    height: 20px;
+    padding: 17px 15px;
+    border-radius: 100px;
+    border: none;
+}
+
+.navbtn{
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 7px 50px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'poppins';
+
+}
+.navbtn button:hover{
+    /* background-color:rgba(121, 121, 17, 0.404) ; */
+    color: white;
+    padding: 7px 12px;
+    transition: 0.5s;
+}
+.hero{
+    background-image: url(pexels-pixabay-326259.jpg);
+    background-color: rgb(255, 123, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+    background-position: center;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.664); /* Adjust the color and opacity as needed */
+    z-index: 1;
+}
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+}
+.sub-parent{
+    /* color: white; */
+    text-align: center;
+    z-index: 2; /* Ensure content is above the overlay */
+    margin-bottom: 20px;
+}
+.sub-parent h1{
+    font-size: 80px;
+    color: white;
+    font-family: "Poppins", sans-serif; ;
+    /* font-family: 'Clash Display', sans-serif; */
+    font-weight: 800;
+    /* margin-bottom: 100px; */
+}
+.sub-parent p{
+    font-size: 15px;
+}
+
+.glass-button {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 10px 50px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.glass-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.span{
+    /* font-size: 40px; */
+    color: white;
+    /* font-family: cursive; */
+} 
+
+.about{
+    /* height: 100vh; */
+    z-index: 2;
+    margin-bottom: 20px;
+} 
+
+.about-parent{
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    color: white;
+    font-weight: 700;
+}
+
+.about-parent img{
+    width: 70px;
+    height: 70px;
+    padding: 0 50px;
+}
+
+
+button:hover{
+    background-color:rgba(121, 121, 17, 0.404) ;
+    color: white;
+    padding: 7px 12px;
+    transition: 0.5s;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 15px;
+    background-color: white;
+    color: red;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+}
+
+.checkbtn{
+    font-size: 20px;
+    color: black;
+    float: right;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+
+/* MEDIA SCREEN */                                                                                                                      
+@media (max-width: 600px){
+    .checkbtn{
+        display: block;
+    }
+    
+    .LOGO{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar{
+        background-color: black;
+        /* background-color:whitesmoke; */
+        padding: 20px 30px;
+    
+    }
+    span{
+        color: white;
+        /* background-color: aqua; */
+    
+    }
+
+    i{
+        color: white;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        font-family: cursive;
+        justify-content: center;
+        /* background-color: rgba(255, 123, 0, 0.863); */
+    }
+
+    .navlinks ul li{
+        display: block;
+        text-align: center;
+        /* margin: 0 20px; */
+        font-family: "Poppins", sans-serif;
+        line-height: 60px;       
+    }   
+
+    .navlinks ul{
+        position: fixed;
+        width: 100%;
+        height: 20vh;
+        margin: 30px 0;
+        left: -100%;
+        transition: all .5s;
+    }
+
+    #check:checked ~ .navlinks{
+        left: 0;
+    }
+
+    .navlinks ul a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .navbtn button{
+        background-color: rgba(255, 123, 0, 0.863);
+        color: white;
+        border: none;
+        border-radius: 3px;
+        padding: 7px 30px;
+        font-family: 'poppins';
+        text-align: center;
+        display: none;
+    
+    }
+    .navbtn button:hover{
+        background-color:rgba(121, 121, 17, 0.404) ;
+        color: black;
+        padding: 7px 12px;
+        transition: 0.5s;
+    }
+
+    .hero{
+        background-image: url(pexels-pixabay-326259.jpg);
+        /* background-color: rgb(255, 123, 0); */
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 60vh;
+        position: relative;
+        background-position: center;
+        overflow: hidden;
+    }
+    
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.664); /* Adjust the color and opacity as needed */
+        z-index: 1;
+    }
+    
+    .parent{
+        display: flex;
+        justify-content: center;
+        height: 70vh;
+        align-items: center;
+    
+    }
+    .sub-parent{
+        /* color: white; */
+        text-align: center;
+        z-index: 2; /* Ensure content is above the overlay */
+    }
+    .sub-parent h1{
+        font-size: 35px;
+        color: white;
+        /* font-family: "Poppins", sans-serif; ; */
+        font-family: 'Clash Display', sans-serif;
+        font-weight: 600;
+        /* margin-bottom: 100px; */
+        margin-bottom: 10px;
+    }
+    .sub-parent p{
+        font-size: 15px;
+    }
+    .sub-parent button{
+        padding: 8px 25px;
+        border: none;
+        border-radius: 3px;
+        background-color: red;
+        color:white ;
+        margin-bottom: 150px;
+        font-family: 'poppins';
+    }
+    .span{
+        /* font-size: 40px; */
+        color: white;
+        /* font-family: cursive; */
+    } 
+}
